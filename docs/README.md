@@ -68,7 +68,7 @@ appmap.createOrAugmentApp("MyTinyApp").withScreen("welcome")
 
 
 // create our first tests
-var mta = appmap.apps("MyTinyApp");  // shortcut to app name
+var mta = appmap.apps["MyTinyApp"];  // shortcut to app name
 
 automator.createScenario("Valid user logs in and is welcomed", ["myTestTag", "login", "happyPath"])
     .withStep(mta.login.enterCredentials, {username: "pat", password: "1234"})
